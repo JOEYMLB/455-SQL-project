@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<!--By: Joey Mills-->
+<html lang="en">
+    <head>
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/css/bootstrap.min.css" rel="stylesheet" >
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" ></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.min.js" integrity="sha384-Atwg2Pkwv9vp0ygtn1JAojH0nYbwNJLPhwyoVbhoPwBhjQPR5VtM2+xf0Uwh9KtT" crossorigin="anonymous"></script>
+        <title>
+            Concert Home
+        </title>
+    </head>
+    <body>
+		<!--This is the different selections for each query each one goes to a different php file-->
+		<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+		  <span class="navbar-brand mb-0 h1">Concert Database</span>
+		  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+			<span class="navbar-toggler-icon"></span>
+		  </button>
+		  <div class="collapse navbar-collapse" id="navbarNav">
+			<ul class="navbar-nav">
+			  <li class="nav-item">
+				<a class="nav-link" href="ticks_100_or_less.php">Aggr Fun</a>
+			  </li>
+			  <li class="nav-item">
+				<a class="nav-link" href="top_5_producers.php">Aggr Fun</a>
+			  </li>
+			  <li class="nav-item">
+				<a class="nav-link" href="venues_in_wilmington.php">Like Query</a>
+			  </li>
+			  <li class="nav-item">
+				<a class="nav-link" href="Guest_TicketInfo.php">2 Table Join</a>
+			  </li>
+			  <li class="nav-item">
+				<a class="nav-link" href="Producer_References.php">Self Join</a>
+			  </li>
+			  <li class="nav-item">
+				<a class="nav-link" href="Venue_Producers.php">Stored Fun</a>
+			  </li>
+			  <li class="nav-item">
+				<a class="nav-link" href="Find_Artist_Concert.php">3 Table Join</a>
+			  </li>
+			  <li class="nav-item">
+				<a class="nav-link" href="Producers_NO_Sr_Producer.php">Group By/Having</a>
+			  </li>
+			  <li class="nav-item">
+				<a class="nav-link" href="Artist_Producers.php">Stored Proce</a>
+			  </li>
+			  <li class="nav-item">
+				<a class="nav-link" href="Guest_Artist.php">Sub Query</a>
+			  </li>
+			</ul>
+		  </div>
+		</nav>
+		<!--The Paragraph s on the index page-->
+        <h2 align="center" style="background-color: #E8E8E8; margin-left: 5em; margin-right: 5em; margin-top: 1em;">Concert Database Description Page</h2>
+		<center><label style="background-color: #E8E8E8; margin-left: 5em; margin-right: 5em; margin-top: 1em;">By: Joey Mills</label></center>
+		<div class="description-text" style="background-color: #E8E8E8; margin-left: 10em; margin-right: 10em; margin-top: 2em;">
+			<p>The purpose of this database is to make the accessibility of information regarding concert event organization as simple as possible. The information pertaining to Performers, Venues, Events, Tickets, and Attendees can be accessed from the database to not only look up information, but also to assess trends such as performers that have had performed the most, which producers work with how many bands, and so much more. This is designed for executives or top people in promotional companies so they can make an informed decision regarding who to work with, what sales to expect, who to expect will be the lead producer of the show, etc.</p>
+			<p>On the commercial side of the database, the information can be queried and displayed either on a webpage or mobile application to provide users with up-to-date information on music events. When dealing with a community focused on local musicians, keeping up to date information on every artist and the venues that allow them to express their talent is of to utmost importance.</p>
+			<p>The Trigger query is when a new guest is added to the data base it makes there first name all capital</p>
+		</div>
+		<!--Display the diagrams-->
+		<h3 align="center">ER Diagram</h3>
+		<img src="ERDiagram.jpg" alt="ER Diagram" style="max-width: 100%;">
+		<h3 align="center">Relational Schema</h3>
+		<img src="Schema.jpg" alt="Relational Schema" style="max-width: 100%;">
+	</body>
+</html>
